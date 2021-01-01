@@ -23,9 +23,9 @@ Install this libraries by running
 ```sh
 pip install simplejson
 pip install re
-pip installpandas
-pip installtkinter
-pip installxlsxwriter
+pip install pandas
+pip install tkinter
+pip install xlsxwriter
 ```
 
 ## How To Use This
