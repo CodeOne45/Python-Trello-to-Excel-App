@@ -12,7 +12,7 @@ It is made to facilitate the calculation of ETA on a project.
 Make sure your card titles respect the following format :
 
 ```txt
-[Title] #SuenceNumber 'Discription' (ETA h)
+[Title] #SequenceNumber 'Description' (ETA h)
 ```
 
 ## Installation

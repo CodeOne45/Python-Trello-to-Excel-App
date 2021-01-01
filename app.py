@@ -15,7 +15,7 @@ canvas1 = tk.Canvas(root, width=300, height=300,
 canvas1.pack()
 
 label1 = tk.Label(
-    root, text="Covertir JSON --> Excel \n Trello format accepted : \n[Title] #SuenceNumber 'Discription' (ETA h)")
+    root, text="Covertir JSON --> Excel \n Trello format accepted : \n[Title] #SequenceNumber 'Description' (ETA h)")
 canvas1.create_window(150, 60, window=label1)
 
 # End Interface----
@@ -26,7 +26,7 @@ data = None
 def getJSON():
     MsgBox = tk.messagebox.showinfo(
         'Execel created',
-        "Please make sure that your Trollo card respect this fomat : \n [Title] #SuenceNumber 'Discription' (ETA h)")
+        "Please make sure that your Trollo card respect this fomat : \n [Title] #SequenceNumber 'Description' (ETA h)")
     global data
     import_file_path = filedialog.askopenfilename()
     json_data = open(import_file_path, errors='ignore').read()
@@ -48,7 +48,7 @@ def extractTrello():
     l[0][0] = "Status"
     l[1][0] = "Titre"
     l[2][0] = "Sequence"
-    l[3][0] = "Discription"
+    l[3][0] = "Description"
     l[4][0] = "Trello URL"
     l[5][0] = "ETA"
 
